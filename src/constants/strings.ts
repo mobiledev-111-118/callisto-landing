@@ -168,7 +168,18 @@ export const coreteams = [
         name: "Dexaran",
         avatar: Assets.p6,
         role: "Researching Team Lead",
-        description: [],
+        description: [
+            "EthereumCommonwealth Founder",
+            "Creator of #ERC223 Standard"
+        ],
+    },{
+        name: "Gerhard Fourie",
+        avatar: Assets.p9,
+        role: "Video & Digital Marketing Specialist",
+        description: [
+            "CEO of Invictus Mining",
+            "Main advisor of Callisto Enterprise"
+        ],
     },{
         name: "Veno N'detti",
         avatar: Assets.p8,
@@ -180,61 +191,75 @@ export const coreteams = [
 
 export const devteams = [
     {
-        name: "Kryptosoul King",
-        avatar: Assets.am2,
-        role: "Ambassador",
-    },{
-        name: "MJ",
-        avatar: Assets.tempavatar,
-        role: "Ambassador",
-    },{
-        name: "Mike",
-        avatar: Assets.tempavatar,
-        role: "Ambassador",
-    },{
-        name: "ZS",
-        avatar: Assets.tempavatar,
-        role: "Ambassador",
+        name: "Dr ZS",
+        avatar: Assets.am1,
+        role: "Advisor",
+        tele: "@zvse3"
     },{
         name: "Maximus",
-        avatar: Assets.tempavatar,
+        avatar: Assets.am2,
         role: "Ambassador",
-    },{
-        name: "Muf Moto",
-        avatar: Assets.am1,
-        role: "Ambassador",
-    },{
-        name: "Jae",
-        avatar: Assets.am3,
-        role: "Telegram Admin",
+        tele: "@Maximus_el",
     },{
         name: "Mad Catter",
-        avatar: Assets.tempavatar,
-        role: "Telegram Admin",
+        avatar: Assets.am3,
+        role: "Russian Ambassador",
+        tele: "MadCatter"
     },{
         name: "11",
-        avatar: Assets.tempavatar,
-        role: "Telegram Admin",
+        avatar: Assets.am4,
+        role: "Vietnamese Ambassador",
+        tele: "@NB1011"
+    },{
+        name: "JAE",
+        avatar: Assets.am5,
+        role: "Korean Ambassador",
+        tele: "@newgenex"
+    },{
+        name: "Muf Moto",
+        avatar: Assets.am6,
+        role: "Czech Ambassador",
+        tele: "@Mufmoto"
+    },{
+        name: "Smart Vector",
+        avatar: Assets.am7,
+        role: "African Ambassador",
+        tele: "@SmartVector"
+    },{
+        name: "Mike",
+        avatar: Assets.am8,
+        role: "Ambassador",
+        tele: "@cryptodaddy007",
+    },{
+        name: "MJ",
+        avatar: Assets.am9,
+        role: "Ambassador",
+        tele: "@MJ_ukr"
+    },{
+        name: "Co BE Kieu Ky",
+        avatar: Assets.am10,
+        role: "Admin",
+        tele: "@CobeKieuky"
     },{
         name: "Jet Ong",
-        avatar: Assets.tempavatar,
-        role: "Telegram Admin",
+        avatar: Assets.am11,
+        role: "Admin",
+        tele: "@jetong"
     },{
-        name: "Rizky",
-        avatar: Assets.tempavatar,
-        role: "Telegram Admin",
+        name: "Abdou Sam",
+        avatar: Assets.am12,
+        role: "Admin",
+        tele: "@Abdousam"
     },{
-        name: "AbdouSam",
-        avatar: Assets.tempavatar,
-        role: "Telegram Admin",
+        name: "Kite",
+        avatar: Assets.am13,
+        role: "Admin",
+        tele: "@Mikaril"
     },{
-        name: "Hallal Ex",
-        avatar: Assets.tempavatar,
-        role: "Telegram Admin",
-    },{
-        name: "韭韭",
-        avatar: Assets.tempavatar,
-        role: "Telegram Admin",
+        name: "Jumpy71",
+        avatar: Assets.am14,
+        role: "Admin",
+        tele: "@Jumpy1971"
     }
 ]
 

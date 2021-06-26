@@ -247,6 +247,12 @@ const LineMarkImg = styled.img`
     bottom: 0px;
     height: 300px;
     z-index: 1;
+    @media screen and (max-width: 1180px){
+        height: 250px;
+    }
+    @media screen and (max-width: 1112px){
+        height: 150px;
+    }
     @media screen and (max-width: 998px) {
         display: none;
     }

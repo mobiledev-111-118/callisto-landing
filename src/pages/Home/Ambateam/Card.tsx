@@ -21,7 +21,7 @@ const Card = ({item}) => {
                 <LinkStyledButton>
                     <FaTelegramPlane color={Theme.colors.secondary} />
                 </LinkStyledButton>
-                <Text>@test</Text>
+                <Text>{item.tele}</Text>
             </RowCenter>
         </Container>
     )

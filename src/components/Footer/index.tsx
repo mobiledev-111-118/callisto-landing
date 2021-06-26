@@ -1,4 +1,3 @@
-import Row from 'components/Row'
 import {
     FaTelegramPlane,
     FaTwitter,
@@ -31,7 +30,7 @@ const Container = styled.div`
     width: 100%;
     padding: 50px 8%;
     background-color: ${Theme.colors.footerbk};
-    align-items: center;
+    // align-items: center;
     z-index: 999;
     @media (max-width: 1200px) {
         padding: 50px 20px;
@@ -144,32 +143,16 @@ const TextBold = styled.p`
 `;
 const MobHidden = styled.div`
     display: flex;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     justify-content: center;
     align-items: center;
     background-color: #FFF;
-    border-radius: 25px;
+    border-radius: 20px;
     margin-right: 10px;
     margin-bottom: 10px;
-    // @media (max-width: 768px) {
-    //     display: none;
-    // }
 `;
-const MobShown = styled.div`
-    display: none;
-    @media (max-width: 768px) {
-        display: flex;
-        width: 50px;
-        height: 50px;
-        justify-content: center;
-        align-items: center;
-        background-color: #FFF;
-        border-radius: 25px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-    }
-`;
+
 const MobDiv = styled.div`
     @media (max-width: 768px) {
         display: flex;
@@ -198,7 +181,7 @@ const Footer = ({}) => {
     }
     return (
         <Container>
-            <div className="row">
+            <div className="row" style={{alignItems: "flex-start"}}>
                 <div className="col-lg-3 col-md-6 col-sm-12">
                     <Spacer height ={"20px"} />
                     <SubTitle fontWeight={"700"} color={Theme.colors.white}>Subscribe to our newsletter</SubTitle>

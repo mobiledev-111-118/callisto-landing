@@ -24,11 +24,25 @@ import p3 from '../assets/images/teams/laurent.png';
 import p4 from '../assets/images/teams/Karel.jpeg';
 import p5 from '../assets/images/teams/Yuriy.jpg';
 import p6 from '../assets/images/teams/dexaran.jpg';
+
 import p7 from '../assets/images/teams/wang.jpg';
 import p8 from '../assets/images/teams/veno.jpg';
-import am1 from '../assets/images/teams/Muf_avatar.jpg';
-import am2 from '../assets/images/teams/krypto.jpg';
-import am3 from '../assets/images/teams/jae.jpg';
+import p9 from '../assets/images/teams/gerhard.png';
+
+import am1 from '../assets/images/teams/drzs.png';
+import am2 from '../assets/images/teams/maximus.png'
+import am3 from '../assets/images/teams/mad.png'
+import am4 from '../assets/images/teams/nb1011.png';
+import am5 from '../assets/images/teams/newgenex.png';
+import am6 from '../assets/images/teams/Muf_avatar.jpg';
+import am7 from '../assets/images/teams/smartvector.png';
+import am8 from '../assets/images/teams/mike.png';
+import am9 from '../assets/images/teams/mj.png';
+import am10 from '../assets/images/teams/cobe.png';
+import am11 from '../assets/images/teams/jet.png';
+import am12 from '../assets/images/teams/abdou.png';
+import am13 from '../assets/images/teams/kite.png';
+import am14 from '../assets/images/teams/jumpy.png';
 
 import tempavatar from '../assets/images/teams/avatar.png';
 
@@ -59,10 +73,22 @@ export const Assets = {
     p6: p6,
     p7: p7,
     p8: p8,
+    p9: p9,
 
     am1: am1,
     am2: am2,
     am3: am3,
+    am4,
+    am5,
+    am6,
+    am7,
+    am8,
+    am9,
+    am10,
+    am11,
+    am12,
+    am13,
+    am14,
 
     tempavatar: tempavatar,
     

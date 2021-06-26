@@ -29,6 +29,7 @@ const Container = styled.div`
     top: 0px;
     left: 0px;
     padding-bottom: 20%;
+    min-height: calc(100vh - 50px);
     @media (max-width: 596px) {
         background-image: none;
         justify-content: flex-start;
