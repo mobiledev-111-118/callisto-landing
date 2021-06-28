@@ -204,7 +204,7 @@ export const devteams = [
         name: "Mad Catter",
         avatar: Assets.am3,
         role: "Russian Ambassador",
-        tele: "MadCatter"
+        tele: "@MadCatter"
     },{
         name: "11",
         avatar: Assets.am4,

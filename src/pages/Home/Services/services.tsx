@@ -3,6 +3,9 @@ import Spacer from 'components/Spacer';
 import Title from 'components/Title';
 import { Assets } from 'constants/images';
 import { Theme } from 'constants/theme';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { getCoinPrice } from 'state/home/action';
 import styled from 'styled-components';
 
 const Services = () => {
@@ -10,6 +13,11 @@ const Services = () => {
     const transactions = "443,954";
     const frozens = "1,731,548,226";
     const hashrates = "105";
+    const dispatch = useDispatch();
+    useEffect(() => {
+        console.log("========= start =======")
+        dispatch(getCoinPrice());
+    }, [])
     return (
         <Container>
             <TitleCon>
