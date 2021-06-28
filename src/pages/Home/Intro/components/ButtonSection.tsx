@@ -32,7 +32,7 @@ const ButtonArea = styled.div`
 
 const GetButton = styled.a`
     background-color: ${Theme.colors.primary};
-    text-decoration: none;
+    text-decoration: none !important;
     padding: 5px 50px;
     width: 180px;
     margin-right: 15px;
@@ -49,7 +49,7 @@ const GetButton = styled.a`
 
 const StakeButton = styled.a`
     background-color: ${Theme.colors.white};
-    text-decoration: none;
+    text-decoration: none !important;
     padding: 7px 50px 3px 50px;
     width: 180px;
     margin-right: 15px;

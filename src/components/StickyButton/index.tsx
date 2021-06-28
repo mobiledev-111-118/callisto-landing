@@ -6,6 +6,8 @@ import Twitter from '../Icons/Twitter';
 import Telegram from '../Icons/Telegram';
 import Youtube from '../Icons/Youtube';
 
+import { AiOutlineReddit } from 'react-icons/ai';
+
 const Container = styled.div`
     display: flex;
     flex-direction: column;
@@ -33,7 +35,7 @@ const StickyButton = ({}) => {
                 <Telegram />
             </StyledLi>
             <StyledLi href="https://www.reddit.com/r/CallistoCrypto/" target="_blank">
-                <Redit />
+                <AiOutlineReddit color={Theme.colors.primary} size={30} />
             </StyledLi>
             <StyledLi href="https://www.youtube.com/channel/UC1WMae32v_eJ8qOtLQqM26Q" target="_blank">
                 <Youtube />

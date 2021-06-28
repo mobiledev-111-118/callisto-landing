@@ -122,7 +122,7 @@ export const coreteams = [
         role: "Chief Executive Officer/CEO",
         description: [
             "CEO of Invictus Solutions (CZ)",
-            "Solution Architect with more than 15 years of experience and leadership roles"
+            "Solution Architect with more than 15 years of experience and leadership roles",
         ],
     },{
         name: "Yohan Graterol",
@@ -266,7 +266,7 @@ export const devteams = [
 export const features = [
     {
         img: Assets.f1logo,
-        desc: "Callisto Netowork is a proot-of-work blockchain platform with a strong emphasis on security. Building on its native cryptocurrency (CLO). Callisto Network is a smart contract layer 1 solution that offers a unique set of features."
+        desc: "Callisto Netowork is a proof-of-work blockchain platform with a strong emphasis on security. Building on its native cryptocurrency (CLO). Callisto Network is a smart contract layer 1 solution that offers a unique set of features."
     },
     {
         img: Assets.f2logo,
@@ -274,7 +274,7 @@ export const features = [
     },
     {
         img: Assets.f3logo,
-        desc: "The ability to earn a monthly passive income through a process called Cold Staking is one of Callisto Network's unique features. Cold stakers receive interest simply for"
+        desc: "The ability to earn a monthly passive income through a process called Cold Staking is one of Callisto Network's unique features. Cold stakers receive interest simply for holding their CLO coins."
     }
 ]
 
@@ -314,5 +314,72 @@ export const newsdata = [
         date: "11.10.2020",
         title: "Callisto Network 2.0",
         desc: "Callisto Network founds new directions and started working on the most important area, namely use-cases and adoption."
+    }
+]
+
+export const ecosdata = [
+    {
+        title: "Smart Contract Audits",
+        desc: [
+            "Callisto Network assists smart contract developers in reducing risks and flaws in their smart contract code. Doing so boosts the adoption of programmable blockchains for the benefit of the entire crypto industry.",
+            "Having completed over 350 smart contract audits, including many major projects, Callisto Network has established itself as the leading independent security expert."
+        ],
+        img: Assets.ecomark1,
+        link: "https://callisto.network/smart-contract-audit/"
+    },{
+        title: "Smart Contact Migration Service",
+        desc: [
+            "Callisto Netowork puts its experience and knowledge at the service of developers who desire to migrate their DApps from Ethereum chain to EOS.",
+        ],
+        img: Assets.ecomark2,
+        link: "https://callisto.network/smart-contract-migration/",
+    },{
+        title: "CryptoBot",
+        desc: [
+            "CryptoBot offers Telegram users a full range of features, from sending and receiving cryptocurrencies to earning passive income.",
+            "Requiring no configuration, Cryptobot can be added quickly and easily to any Telegram group and thus become a fantastic marketing tool to interact with the community like never before."
+        ],
+        img: Assets.ecomark3,
+        link: "https://callisto.network/cryptobot/",
+    },{
+        title: "Cold Staking",
+        desc: [
+            "One of Callisto’s unique features is earning a monthly passive income through a process called Cold Staking.",
+            "The Cold Staking smart contract receives 40% of all CLO mining rewards and distributes them to cold stackers in direct proportion to their stakes."
+        ],
+        img: Assets.ecomark4,
+        link: "https://callisto.network/cold-staking/",
+    },{
+        title: "BUST Stablecoin",
+        desc: [
+            "The Bulls USD ($BUSDT) token is backed by US Dollar at a 1:1 ratio. To ensure trust, this peg is maintained through a smart contract. Therefore 1 Bull USDT is always 1 USD, regardless of the cryptocurrency market’s volatility.",
+            "The perfect complement to Soy.Finance, the BUSDT token can also be invested to receive a passive income."
+        ],
+        img: Assets.ecomark5,
+        link: "https://bulls-investing-club.medium.com/busdt-a-stablecoin-for-the-callisto-network-ecosystem-e9ef0830842"
+    },{
+        title: "Soy Finance",
+        desc: [
+            "Soy.Finance is a complete DeFi solution on Callisto Network blockchain, including a decentralized swap and yield farming.",
+            "Beyond the decentralization, the reduced fees and the user experience, Soy.Finance stands for security."
+        ],
+        img: Assets.ecomark6,
+        link: "https://nervous-edison-17cb1e.netlify.app/"
+    },{
+        title: "Callisto Treasury",
+        desc: [
+            "Callisto Network is not based on pre-mined coins or an ICO, and initially, its funding was based on one of its technical features: The Treasury.",
+            "The Callisto Treasury receives 10% of all mined blocks. With these funds, it is anticipated to finance the development of the projects proposed and voted by the community."
+        ],
+        img: Assets.ecomark7,
+        link: "https://callisto.network/IDAVOLL/"
+    },{
+        title: "Callisto Enterprise",
+        desc: [
+            "Callisto Enterprise aims to allow any company to achieve its Blockchain ambitions by offering a range of services to outsource the technical process.",
+            "Callisto Enterprise's experts have the skills to help you along the way from in-house solutions to consulting."
+        ],
+        img: Assets.ecomark8,
+        link: "https://callisto.network.enterprise/"
     }
 ]

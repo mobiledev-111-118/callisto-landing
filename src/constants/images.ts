@@ -13,7 +13,17 @@ import hashrate from 'assets/images/Hashrate.svg';
 import card from 'assets/images/card.png';
 import line from 'assets/images/line.png';
 import linemark from 'assets/images/linemark.png';
-import ecomark1 from 'assets/images/ecosystem/scm.png';
+
+import ecomark1 from 'assets/images/ecosystem/Smart Contract Audit.png';
+import ecomark2 from 'assets/images/ecosystem/scm.png';
+import ecomark3 from 'assets/images/ecosystem/Cryptobot.png';
+import ecomark4 from 'assets/images/ecosystem/Cold Staking.png';
+import ecomark5 from 'assets/images/ecosystem/BUSDT Stablecoin.png';
+import ecomark6 from 'assets/images/ecosystem/Soy Finance.png';
+import ecomark7 from 'assets/images/ecosystem/Callisto Treasury.png';
+import ecomark8 from 'assets/images/ecosystem/Callisto Enterprise.png';
+
+
 import news1 from 'assets/images/news/news1.png';
 import arrow from '../assets/images/arrow.png';
 
@@ -62,6 +72,13 @@ export const Assets = {
     line: line,
     linemark: linemark,
     ecomark1: ecomark1,
+    ecomark2,
+    ecomark3,
+    ecomark4,
+    ecomark5,
+    ecomark6,
+    ecomark7,
+    ecomark8,
     news1: news1,
     arrow: arrow,
 

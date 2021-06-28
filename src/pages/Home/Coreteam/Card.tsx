@@ -35,6 +35,7 @@ const Card = ({item}) => {
                         </Row>
                     ))
                 }
+                <TextDots>...</TextDots>
             </DescDiv>
         </Container>
     )
@@ -109,6 +110,14 @@ const TroleBtext = styled.p`
 const Text = styled.p`
     font-family: ${Theme.fonts.title};
     font-size: 14px;
+    line-height: 20px;
+    color:${Theme.colors.secondary};
+    padding-bottom: 15px;
+`;
+const TextDots = styled.p`
+    margin-top: -10px;
+    font-family: ${Theme.fonts.title};
+    font-size: 30px;
     line-height: 20px;
     color:${Theme.colors.secondary};
     padding-bottom: 15px;

@@ -13,12 +13,15 @@ import { Assets } from 'constants/images';
 import { Theme } from 'constants/theme';
 import styled from 'styled-components';
 import { useState } from 'react';
+import { ecosdata } from 'constants/strings';
 
 const Ecosystem = () => {
     const [curIdx, setCurIdx] = useState(0);
-
+    const [item, setItem] = useState(ecosdata[0]);
+    
     const handleClick= (idx) => {
         setCurIdx(idx);
+        setItem(ecosdata[idx]);
     }
     return (
         <Container>
@@ -28,17 +31,21 @@ const Ecosystem = () => {
             <SubCon>
                 <LeftPane>
                     <SubTitle>
-                        Smart Contact Migration Service
+                        {item.title}
                     </SubTitle>
-                    <Img2 src={Assets.ecomark1}/>
-                    <Text>
-                        Callisto Netowork puts its experience and knowledge at the service of developers who desire to migrate their DApps from Ethereum chain to EOS.
-                    </Text>
-                    <GetButton href={"#"} target="_blank">
+                    <Img2 src={item.img}/>
+                    <div>
+                        {item.desc.map((txt) => {
+                            return (
+                                <Text>{txt}</Text>
+                            )
+                        })}
+                    </div>
+                    <GetButton href={item.link} target="_blank">
                         <StyledText color={Theme.colors.white} fontweight={"700"} fontsize={"22px"}>{`Learn more`}</StyledText>
                     </GetButton>
                 </LeftPane>
-                <Img src={Assets.ecomark1}/>
+                <Img src={item.img}/>
             </SubCon>
             <BottomCon>
                 <IconsCon>

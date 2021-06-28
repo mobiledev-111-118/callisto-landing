@@ -122,7 +122,7 @@ const Services = () => {
                                             <SubTitle3>The Leading Security Experts</SubTitle3>
                                             <Spacer height="10px" />
                                             <Text>
-                                                Our experts have made many contributions to improve, Ethereum, Ethereum Classic, EOS, and have audited more than 350 smart contracts.
+                                                Our experts have made many contributions to improve Ethereum, Ethereum Classic, EOS, and have audited more than 350 smart contracts.
                                             </Text>
                                         </TextCon>
                                     </RowItem>

@@ -26,7 +26,7 @@ const Discover = () => {
                     <Line />
                     <div>
                         <Text>
-                            Callisto Netowork started as a self-sustained and self-funded blockchain ecosystem not financed by pre-mined coins or an ICO.
+                            Callisto Network started as a self-sustained and self-funded blockchain ecosystem not financed by pre-mined coins or an ICO.
                         </Text>
                         <Text>
                             Since its launch by the developers of Ethereum Commonwealth (Ethereum Classic). Callisto Network focused its attention on the weakness of the cryptocurrency space, namely the security.
@@ -135,7 +135,7 @@ const Text = styled.p`
 `;
 const GetButton = styled.a`
     background-color: ${Theme.colors.white};
-    text-decoration: none;
+    text-decoration: none !important; 
     padding: 15px 50px;
     width: 250px;
     margin-right: 15px;
