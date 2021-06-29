@@ -274,7 +274,7 @@ const Footer = ({}) => {
             </div>
             <Line />
             <div className="row">
-                <Text2 >@ All rights reserved by</Text2>
+                <Text2 >© All rights reserved by</Text2>
                 <TextBold>Callisto Network</TextBold>
             </div>
         </Container>
