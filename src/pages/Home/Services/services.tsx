@@ -1,23 +1,21 @@
-import Row, { RowEnd, RowCenter, } from 'components/Row';
+import Row, { RowEnd } from 'components/Row';
 import Spacer from 'components/Spacer';
 import Title from 'components/Title';
 import { Assets } from 'constants/images';
 import { Theme } from 'constants/theme';
-import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { getCoinPrice } from 'state/home/action';
+import useMetrics from 'hooks/useMetrics';
 import styled from 'styled-components';
 
+const comma3digits = (d) => {
+    return d.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")
+}
+
 const Services = () => {
-    const total = "59,654,486";
-    const transactions = "443,954";
-    const frozens = "1,731,548,226";
-    const hashrates = "105";
-    const dispatch = useDispatch();
-    useEffect(() => {
-        console.log("========= start =======")
-        dispatch(getCoinPrice());
-    }, [])
+    const mestricsData = useMetrics();
+    const frozen = mestricsData.frozen_coins.toFixed(3).toString().split('.');
+    const cvfrozen1 = comma3digits(parseInt(frozen[0]));
+    const cvfrozen2 = frozen.length === 1 ? '': frozen[1];
+
     return (
         <Container>
             <TitleCon>
@@ -30,7 +28,7 @@ const Services = () => {
                             <Img src={Assets.totalWallet} />
                             <RightCon>
                                 <Label>Total Wallets</Label>
-                                <NumberLabel>{total}</NumberLabel>
+                                <NumberLabel>{comma3digits(mestricsData.total_wallets)}</NumberLabel>
                             </RightCon>
                         </Row>
                     </div>
@@ -39,7 +37,7 @@ const Services = () => {
                             <Img src={Assets.monthT} />
                             <RightCon>
                                 <Label>Monthly Transactions</Label>
-                                <NumberLabel>{`${transactions} txs`}</NumberLabel>
+                                <NumberLabel>{`${comma3digits(mestricsData.monthly_transactions)} txs`}</NumberLabel>
                             </RightCon>
                         </Row>
                     </div>
@@ -48,7 +46,7 @@ const Services = () => {
                             <Img src={Assets.frozen} />
                             <RightCon>
                                 <Label>Frozen Coins</Label>
-                                <NumberLabel>{`${frozens} CLO`}</NumberLabel>
+                                <NumberLabel>{`${cvfrozen1 + '.' + cvfrozen2} CLO`}</NumberLabel>
                             </RightCon>
                         </RowEnd>
                     </div>
@@ -57,7 +55,7 @@ const Services = () => {
                             <Img src={Assets.hashrate} />
                             <RightCon>
                                 <Label>Network Hashrate</Label>
-                                <NumberLabel>{`${hashrates} GH/s`}</NumberLabel>
+                                <NumberLabel>{`${mestricsData.netwok_hashrate}`}</NumberLabel>
                             </RightCon>
                         </RowEnd>
                     </div>
