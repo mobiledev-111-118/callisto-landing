@@ -8,7 +8,7 @@ const initialState = {
     "netwok_hashrate": "0 GH/s"
 }
 
-const endpoint = "http://135.181.196.253:8000/clo_metrics";
+const endpoint = "https://cloe.deta.dev/clo_metrics";
 const useMetrics = () => {
     const [metrics, setMetrics] = useState(initialState);
 
