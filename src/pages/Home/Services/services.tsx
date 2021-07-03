@@ -5,10 +5,30 @@ import { Assets } from 'constants/images';
 import { Theme } from 'constants/theme';
 import useMetrics from 'hooks/useMetrics';
 import styled from 'styled-components';
+import Slick, { Settings } from "react-slick";
+import { securitydata } from 'constants/strings';
+import NextArrow from './NextArrow';
+import PrevArrow from './PrevArrow';
+
+import "./style.scss";
 
 const comma3digits = (d) => {
     return d.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")
 }
+
+const slickSettings: Settings = {
+    accessibility: false,
+    draggable: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    speed: 500,
+    dots: true,
+    dotsClass: "slick-dots",
+    autoplay: false,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />
+};
 
 const Services = () => {
     const mestricsData = useMetrics();
@@ -16,6 +36,63 @@ const Services = () => {
     const cvfrozen1 = comma3digits(parseInt(frozen[0]));
     const cvfrozen2 = frozen.length === 1 ? '': frozen[1];
 
+    const renderItems = () => {
+        return securitydata.map((item) =>{
+            return (
+                <BottomCon key={item.id}>
+                    <FixedImg src={item.img} alt="image"/>
+                    <SubCon>
+                        <LineImg className="line-image" src={Assets.line} alt="line_image"/>
+                        <LineMarkImg src={Assets.linemark} alt="mark_image"/>
+                        <SpaceRow2>
+                            <div className="row">
+                                <div className="col-lg-6 col-md-6">
+                                    <DisableDiv></DisableDiv>
+                                </div>
+                                
+                                <div className="col-lg-6 col-md-6">
+                                    <QuadDiv>
+                                        <div></div>
+                                        <div>
+                                            <SubTitle>{item.title1}</SubTitle>
+                                            <SubTitle2>{item.title2}</SubTitle2>
+                                        </div>
+                                        <LineDiv></LineDiv>
+                                    </QuadDiv>
+                                </div>
+                            </div>
+                        </SpaceRow2>
+                        <Spacer height="50px"/>
+                        <SpaceRow2>
+                            <div className="row">
+                                {
+                                    item.desc.map((descItem, index) => (
+                                        <div className="col-lg-6 col-sm-12" key={descItem.id}>
+                                            <QuadDiv>
+                                                <div></div>
+                                                <RowItem>
+                                                    <NumberCon>{`0${index+1}`}</NumberCon>
+                                                    <TextCon>
+                                                        <SubTitle3>{descItem.title}</SubTitle3>
+                                                        <Spacer height="10px" />
+                                                        <Text>
+                                                            {descItem.contents}
+                                                        </Text>
+                                                    </TextCon>
+                                                </RowItem>
+                                                <div></div>
+                                            </QuadDiv>
+                                        </div>
+                                    ))
+                                }
+                            </div>
+                        </SpaceRow2>
+                    </SubCon>
+                </BottomCon>
+            )
+        })
+        
+    }
     return (
         <Container>
             <TitleCon>
@@ -61,76 +138,11 @@ const Services = () => {
                     </div>
                 </div>
             </MetricsCon>
-            <BottomCon>
-                <FixedImg src={Assets.card}/>
-                <SubCon>
-                    <LineImg src={Assets.line}/>
-                    <LineMarkImg src={Assets.linemark}/>
-                    <Dots>
-                        <Circle />
-                        <Circle />
-                        <Circle />
-                        <Circle />
-                        <Circle />
-                    </Dots>
-                    <SpaceRow2>
-                        <div className="row">
-                            <div className="col-lg-6 col-md-6">
-                                <DisableDiv></DisableDiv>
-                            </div>
-                            
-                            <div className="col-lg-6 col-md-6">
-                                <QuadDiv>
-                                    <div></div>
-                                    <div>
-                                        <SubTitle>Security</SubTitle>
-                                        <SubTitle2>First</SubTitle2>
-                                    </div>
-                                    <LineDiv></LineDiv>
-                                </QuadDiv>
-                            </div>
-                        </div>
-                    </SpaceRow2>
-                    <Spacer height="50px"/>
-                    <SpaceRow2>
-                        <div className="row">
-                            <div className="col-lg-6 col-sm-12">
-                                <QuadDiv>
-                                    <div></div>
-                                    <RowItem>
-                                        <NumberCon>01</NumberCon>
-                                        <TextCon>
-                                            <SubTitle3>An Unstoppable Platform</SubTitle3>
-                                            <Spacer height="10px" />
-                                            <Text>
-                                                Callisto Network has never been 51% attacked or hacked, making the Dapps running on it the safest in the blockchain ecosystem.
-                                            </Text>
-                                        </TextCon>
-                                    </RowItem>
-                                    <div></div>
-                                </QuadDiv>
-                            </div>
-                            
-                            <div className="col-lg-6">
-                                <QuadDiv>
-                                    <div></div>
-                                    <RowItem>
-                                        <NumberCon>02</NumberCon>
-                                        <TextCon>
-                                            <SubTitle3>The Leading Security Experts</SubTitle3>
-                                            <Spacer height="10px" />
-                                            <Text>
-                                                Our experts have made many contributions to improve Ethereum, Ethereum Classic, EOS, and have audited more than 350 smart contracts.
-                                            </Text>
-                                        </TextCon>
-                                    </RowItem>
-                                    <div></div>
-                                </QuadDiv>
-                            </div>
-                        </div>
-                    </SpaceRow2>
-                </SubCon>
-            </BottomCon>
+            
+            <CardDiv className="security-container">
+                <Slick {...slickSettings}>{renderItems()}</Slick>
+            </CardDiv>
+            
             <Spacer height="150px" />
         </Container>
     )
@@ -142,6 +154,13 @@ const Container = styled.div`
     @media screen and (max-width: 768px) {
         padding: 0px 5px;
     }
+`;
+
+const CardDiv = styled.div`
+    // padding: 20px 0px;
+    // @media (max-width: 768px) {
+    //     padding: 20px;
+    // }
 `;
 const TitleCon = styled.div`
     width: 100%;
@@ -175,6 +194,8 @@ const FixedImg = styled.img`
     left: 8%;
     height: 300px;
     z-index: 1;
+    background-color: transparent !important;
+    padding: 0 !important;
     @media screen and (max-width: 1300px) {
         height: 250px;
     }
@@ -223,7 +244,7 @@ const BottomCon = styled.div`
 `;
 const SubCon = styled.div`
     position: relative;
-    top: 100px;
+    margin-top: 100px;
     // height: 500px;
     background-color: ${Theme.colors.secondary};
     border-top: 8px;
@@ -232,10 +253,10 @@ const SubCon = styled.div`
     border-color: #1E587D;
     padding: 0 8%;
     @media screen and (max-width: 768px) {
-        padding: 0 20px;
+        padding: 0 20px 30px 20px;
     }
     @media screen and (max-width: 420px) {
-        top: 50px;
+        margin-top: 50px;
     }
 `;
 const LineImg = styled.img`
@@ -243,8 +264,10 @@ const LineImg = styled.img`
     left: 2.5%;
     bottom: 50px;
     z-index: 1;
+    background-color: transparent !important;
+    padding: 0 !important
     @media screen and (max-width: 998px) {
-        display: none;
+        display: none !important;
     }
 `;
 const LineMarkImg = styled.img`
@@ -253,6 +276,8 @@ const LineMarkImg = styled.img`
     bottom: 0px;
     height: 300px;
     z-index: 1;
+    background-color: transparent !important;
+    padding: 0 !important
     @media screen and (max-width: 1180px){
         height: 250px;
     }
@@ -260,7 +285,7 @@ const LineMarkImg = styled.img`
         height: 150px;
     }
     @media screen and (max-width: 998px) {
-        display: none;
+        display: none !important;
     }
 `;
 const QuadDiv = styled.div`
@@ -276,11 +301,13 @@ const SubTitle = styled.p`
     font-family: ${Theme.fonts.textBold};
     font-size: 40px;
     color: ${Theme.colors.white};
+    text-align: left;
 `;
 const SubTitle2 = styled.div`
     font-family: ${Theme.fonts.textBold};
     font-size: 40px;
     color: ${Theme.colors.white};
+    text-align: left;
 `;
 
 const LineDiv = styled.div`
@@ -305,6 +332,7 @@ const NumberCon = styled.div`
     font-family: ${Theme.fonts.textBold};
     font-size: 18px;
     color: ${Theme.colors.secondary};
+    z-index: 99;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 `;
 const TextCon = styled.div`
@@ -315,12 +343,14 @@ const SubTitle3 = styled.p`
     font-family: ${Theme.fonts.textBold};
     font-size: 20px;
     color: ${Theme.colors.white};
+    text-align: left;
 `;
 const Text = styled.p`
     font-family: ${Theme.fonts.title};
     font-size: 16px;
     line-height: 20px;
     color: ${Theme.colors.white};
+    text-align: left;
 `;
 const Dots = styled.div`
     position: absolute;

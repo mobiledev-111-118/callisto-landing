@@ -29,16 +29,14 @@ const Newsletter = () => {
     const renderItems = () => {
         return newsdata.map((item, i) => (
             <div key={item.id}>
-                
-                    <FixImg src={`${item.img}`} alt="" />
-                
+                <FixImg src={`${item.img}`} alt="image" />
                 <ContentDiv>
                     <LeftDiv>
                         <LinkStyledButton>
                             <FaTwitter color={Theme.colors.secondary} size={26}/>
                         </LinkStyledButton>
                         <Spacer height="40px" />
-                        <StyledText color={Theme.colors.white} fontweight="300" fontsize="16px">{item.date}</StyledText>
+                        <StyledText color={Theme.colors.white} fontweight="300" fontsize="14px">{item.date}</StyledText>
                         <Spacer height="15px" />
                         <Line />
                     </LeftDiv>
@@ -80,14 +78,6 @@ const CardDiv = styled.div`
     @media (max-width: 768px) {
         padding: 20px;
     }
-`;
-const ImgDiv = styled.div`
-    z-index: 99;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    min-width: 300px;
-    
 `;
 const FixImg = styled.img`
     margin-left: auto;
@@ -175,6 +165,9 @@ const SubTitle = styled.p`
     font-family: ${Theme.fonts.textBold};
     font-size: 40px;
     color: ${Theme.colors.white};
+    @media screen and (max-width: 560px) {
+        font-size: 25px;
+    }
 `;
 const Text = styled.p`
     font-family: ${Theme.fonts.title};
@@ -182,5 +175,8 @@ const Text = styled.p`
     line-height: 24px;
     color: ${Theme.colors.white};
     text-align: start;
+    @media screen and (max-width: 560px) {
+        font-size: 16px;
+    }
 `;
 export default Newsletter;

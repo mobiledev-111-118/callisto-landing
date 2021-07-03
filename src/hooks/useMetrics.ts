@@ -20,7 +20,7 @@ const useMetrics = () => {
                 })
                 .catch((err) => {
                 })
-            }, 1000)
+            }, 100000)
             
         }
         fetchData();

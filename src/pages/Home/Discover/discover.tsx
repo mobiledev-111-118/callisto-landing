@@ -1,42 +1,62 @@
-import Row, { RowEnd, RowCenter, SpaceRow2 } from 'components/Row';
 import Spacer from 'components/Spacer';
-import Title from 'components/Title';
-import { Assets } from 'constants/images';
 import { Theme } from 'constants/theme';
 import styled from 'styled-components';
 import StyledText from 'components/StyledText';
+import Slick, { Settings } from "react-slick";
+import NextArrow from './NextArrow';
+import PrevArrow from './PrevArrow';
+import { discoverdata } from 'constants/strings';
+
+import "./style.scss";
+
+const slickSettings: Settings = {
+    accessibility: false,
+    draggable: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    speed: 500,
+    dots: true,
+    dotsClass: "slick-dots",
+    autoplay: false,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />
+};
 
 const Discover = () => {
+    
+    const renderItems = () => {
+        return discoverdata.map((item) =>{
+            return (
+                <SubCon key={item.id}>
+                    <LineImg src={item.img} alt="image"/>
+                    <RightPane>
+                        <SubTitle>
+                            {item.title}
+                        </SubTitle>
+                        <Line />
+                        <div>
+                            <Text>
+                                {item.desc1}
+                            </Text>
+                            <Text>
+                                {item.desc2}
+                            </Text>
+                        </div>
+                        <GetButton href={item.link} target="_blank">
+                            <StyledText color={Theme.colors.secondary} fontweight={"700"} fontsize={"22px"}>{`Get Started`}</StyledText>
+                        </GetButton>
+                    </RightPane>
+                </SubCon>
+            )
+        })
+        
+    }
     return (
         <Container>
-            <SubCon>
-                <Dots>
-                    <Circle />
-                    <Circle />
-                    <Circle />
-                    <Circle />
-                    <Circle />
-                </Dots>
-                <LineImg src={Assets.back5}/>
-                
-                <RightPane>
-                    <SubTitle>
-                        Discover Callisto Network
-                    </SubTitle>
-                    <Line />
-                    <div>
-                        <Text>
-                            Callisto Network started as a self-sustained and self-funded blockchain ecosystem not financed by pre-mined coins or an ICO.
-                        </Text>
-                        <Text>
-                            Since its launch by the developers of Ethereum Commonwealth (Ethereum Classic). Callisto Network focused its attention on the weakness of the cryptocurrency space, namely the security.
-                        </Text>
-                    </div>
-                    <GetButton href={"#"} target="_blank">
-                        <StyledText color={Theme.colors.secondary} fontweight={"700"} fontsize={"22px"}>{`Get Started`}</StyledText>
-                    </GetButton>
-                </RightPane>
-            </SubCon>
+            <CardDiv className="discover-container">
+                <Slick {...slickSettings}>{renderItems()}</Slick>
+            </CardDiv>
             <Spacer height="150px" />
         </Container>
     )
@@ -49,16 +69,18 @@ const Container = styled.div`
         padding: 0px 5px;
     }
 `;
+const CardDiv = styled.div``;
 const SubCon = styled.div`
     position: relative;
-    display: flex;
+    display: flex !important;
+    width: 100%;
     justify-content: space-between;
     background-color: ${Theme.colors.secondary};
     border-top: 8px;
     border-bottom: 8px;
     border-style: solid;
     border-color: #1E587D;
-    padding: 100px 8% 100px 4%;
+    padding: 60px 8% 60px 4%;
     @media screen and (max-width: 1050px) {
         padding: 50px 8% 50px 4%;
     }
@@ -73,35 +95,19 @@ const SubCon = styled.div`
 const LineImg = styled.img`
     margin-top: auto;
     margin-bottom: auto;
+    max-width: 400px;
+    background-color: transparent !important;
+    padding: 0 !important;
     @media screen and (max-width: 1050px) {
         height: 300px;
     }
     @media screen and (max-width: 645px) {
-        height: 300px;
-        width: 300px;
+        height: 250px;
+        width: 250px;
         margin: 20px;
         margin-top: 60px;
         align-self: center;
     }
-`;
-const Dots = styled.div`
-    position: absolute;
-    display: flex;
-    right: 8%;
-    bottom: 100px;
-    @media (max-width: 768px) {
-        right: 20px;
-    }
-    @media screen and (max-width: 645px) {
-        bottom: 20px;
-    }
-`;
-const Circle = styled.div`
-    width: 8px;
-    height: 8px;
-    margin: 5px;
-    border: 2px solid #FFF;
-    border-radius: 4px;
 `;
 const RightPane = styled.div`
     display: flex;
@@ -120,6 +126,10 @@ const SubTitle = styled.p`
     font-family: ${Theme.fonts.textBold};
     font-size: 40px;
     color: ${Theme.colors.white};
+    text-align: left;
+    @media screen and (max-width: 768px) {
+        font-size: 30px;
+    }
 `;
 const Line = styled.div`
     height: 2px;
@@ -132,6 +142,10 @@ const Text = styled.p`
     line-height: 24px;
     color: ${Theme.colors.white};
     padding-top: 20px;
+    text-align: left;
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+    }
 `;
 const GetButton = styled.a`
     background-color: ${Theme.colors.white};

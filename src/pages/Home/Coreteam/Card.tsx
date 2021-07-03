@@ -60,7 +60,7 @@ const Row = styled.div`
     align-items: center;
 `;
 
-const LinkStyledButton = styled.button`
+const LinkStyledButton = styled.li`
   border: none;
   background-color: ${Theme.colors.secondary};
   width: 30px;
@@ -72,7 +72,7 @@ const LinkStyledButton = styled.button`
   margin: 5px;
 `
 
-const LinkStyledButton2 = styled.button`
+const LinkStyledButton2 = styled.li`
   border: none;
   background-color: ${Theme.colors.secondary};
   width: 30px;

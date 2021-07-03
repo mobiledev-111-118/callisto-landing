@@ -383,3 +383,126 @@ export const ecosdata = [
         link: "https://callisto.network.enterprise/"
     }
 ]
+
+export const securitydata = [
+    {
+        id: "001",
+        img: Assets.card,
+        title1: "Security",
+        title2: "First",
+        desc: [
+            {
+                id: "desc01",
+                title: "An Unstopable Platform",
+                contents: "Callisto Network has never been 51% attacked or hacked, making the Dapps running on it the safest in the blockchain ecosystem."
+            },{
+                id: "desc02",
+                title: "The Leading Security Experts",
+                contents: "Our experts have made many contributions to improve Ethereum, Ethereum Classic, EOS, and have audited more than 350 smart contracts."
+            }
+        ]
+    },{
+        id: "002",
+        img: Assets.card,
+        title1: "Security",
+        title2: "First",
+        desc: [
+            {
+                id: "desc01",
+                title: "An Unstopable Platform",
+                contents: "Callisto Network has never been 51% attacked or hacked, making the Dapps running on it the safest in the blockchain ecosystem."
+            },{
+                id: "desc02",
+                title: "The Leading Security Experts",
+                contents: "Our experts have made many contributions to improve Ethereum, Ethereum Classic, EOS, and have audited more than 350 smart contracts."
+            }
+        ]
+    },{
+        id: "003",
+        img: Assets.card,
+        title1: "Security",
+        title2: "First",
+        desc: [
+            {
+                id: "desc01",
+                title: "An Unstopable Platform",
+                contents: "Callisto Network has never been 51% attacked or hacked, making the Dapps running on it the safest in the blockchain ecosystem."
+            },{
+                id: "desc02",
+                title: "The Leading Security Experts",
+                contents: "Our experts have made many contributions to improve Ethereum, Ethereum Classic, EOS, and have audited more than 350 smart contracts."
+            }
+        ]
+    },{
+        id: "004",
+        img: Assets.card,
+        title1: "Security",
+        title2: "First",
+        desc: [
+            {
+                id: "desc01",
+                title: "An Unstopable Platform",
+                contents: "Callisto Network has never been 51% attacked or hacked, making the Dapps running on it the safest in the blockchain ecosystem."
+            },{
+                id: "desc02",
+                title: "The Leading Security Experts",
+                contents: "Our experts have made many contributions to improve Ethereum, Ethereum Classic, EOS, and have audited more than 350 smart contracts."
+            }
+        ]
+    },{
+        id: "005",
+        img: Assets.card,
+        title1: "Security",
+        title2: "First",
+        desc: [
+            {
+                id: "desc01",
+                title: "An Unstopable Platform",
+                contents: "Callisto Network has never been 51% attacked or hacked, making the Dapps running on it the safest in the blockchain ecosystem."
+            },{
+                id: "desc02",
+                title: "The Leading Security Experts",
+                contents: "Our experts have made many contributions to improve Ethereum, Ethereum Classic, EOS, and have audited more than 350 smart contracts."
+            }
+        ]
+    }
+]
+
+export const discoverdata = [
+    {
+        id: "001",
+        img: Assets.back5,
+        title: "Discover Callisto Network",
+        desc1: "Callisto Network started as a self-sustained and self-funded blockchain ecosystem not financed by pre-mined coins or an ICO.",
+        desc2: "Since its launch by the developers of Ethereum Commonwealth (Ethereum Classic). Callisto Network focused its attention on the weakness of the cryptocurrency space, namely the security.",
+        link: ""
+    },{
+        id: "002",
+        img: Assets.back5,
+        title: "Discover Callisto Network",
+        desc1: "Callisto Network started as a self-sustained and self-funded blockchain ecosystem not financed by pre-mined coins or an ICO.",
+        desc2: "Since its launch by the developers of Ethereum Commonwealth (Ethereum Classic). Callisto Network focused its attention on the weakness of the cryptocurrency space, namely the security.",
+        link: ""
+    },{
+        id: "003",
+        img: Assets.back5,
+        title: "Discover Callisto Network",
+        desc1: "Callisto Network started as a self-sustained and self-funded blockchain ecosystem not financed by pre-mined coins or an ICO.",
+        desc2: "Since its launch by the developers of Ethereum Commonwealth (Ethereum Classic). Callisto Network focused its attention on the weakness of the cryptocurrency space, namely the security.",
+        link: ""
+    },{
+        id: "004",
+        img: Assets.back5,
+        title: "Discover Callisto Network",
+        desc1: "Callisto Network started as a self-sustained and self-funded blockchain ecosystem not financed by pre-mined coins or an ICO.",
+        desc2: "Since its launch by the developers of Ethereum Commonwealth (Ethereum Classic). Callisto Network focused its attention on the weakness of the cryptocurrency space, namely the security.",
+        link: ""
+    },{
+        id: "005",
+        img: Assets.back5,
+        title: "Discover Callisto Network",
+        desc1: "Callisto Network started as a self-sustained and self-funded blockchain ecosystem not financed by pre-mined coins or an ICO.",
+        desc2: "Since its launch by the developers of Ethereum Commonwealth (Ethereum Classic). Callisto Network focused its attention on the weakness of the cryptocurrency space, namely the security.",
+        link: ""
+    }
+]
