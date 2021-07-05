@@ -14,6 +14,12 @@ const useMetrics = () => {
 
     useEffect(() => {
         const fetchData = () => {
+            axios.get(endpoint).then((res) => {
+                setMetrics(res.data.result);
+            })
+            .catch((err) => {
+            })
+
            setInterval(() => {
                 axios.get(endpoint).then((res) => {
                     setMetrics(res.data.result);
