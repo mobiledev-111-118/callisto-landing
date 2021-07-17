@@ -25,6 +25,12 @@ import ecomark8 from 'assets/images/ecosystem/Callisto Enterprise.png';
 
 
 import news1 from 'assets/images/news/news1.png';
+import news2 from 'assets/images/news/news2.png';
+import news3 from 'assets/images/news/news3.png';
+import news4 from 'assets/images/news/news4.png';
+import news5 from 'assets/images/news/news5.png';
+import news6 from 'assets/images/news/news6.png';
+import news7 from 'assets/images/news/news7.png';
 import arrow from '../assets/images/arrow.png';
 
 // test personal images
@@ -80,6 +86,12 @@ export const Assets = {
     ecomark7,
     ecomark8,
     news1: news1,
+    news2,
+    news3,
+    news4,
+    news5,
+    news6,
+    news7,
     arrow: arrow,
 
     p1: p1,
