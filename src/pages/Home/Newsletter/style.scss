@@ -24,6 +24,9 @@ body {
             width: calc(100% - 20px);   
             bottom: 20px;
         }
+        @media screen and (max-width: 768px) {
+            bottom: 40px;
+        }
         
     }
     .slick-dots li button:before{

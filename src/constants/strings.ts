@@ -279,7 +279,48 @@ export const features = [
 ]
 
 export const newsdata = [
+    {
+         id: "9",
+         img: Assets.news8,
+         twitter: "",
+         date: "07.31.2021",
+         title: "From Bitcoin to Callisto Network: CryptoMining Evolution",
+         desc: "Terms like Blockchain, Cryptocurrency, and Cryptomining entered our world with Bitcoin. However, technology is designed to evolve."
+    },
+    {
+        id: "8",
+        img: Assets.news9,
+        twitter: "",
+        date: "07.26.2021",
+        title: "Our 2nd Quarter Report is Now Available!",
+        desc: "It is time to review our activity for the 2nd quarter."
+   },
    {
+       id: "10",
+       img: Assets.secmark1,
+       twitter: "",
+       date: "07.26.2021",
+       title: "BankETH Smart Contract Audit.",
+       desc: "Callisto Network Security Department conducted the BankETH smart contract security audit."
+    },
+    {
+        id: "11",
+        img: Assets.news10,
+        twitter: "",
+        date: "07.24.2021",
+        title: "MJ joined Callisto Enterprise.",
+        desc: "We are delighted to welcome MJ as Lead Analyst. MJ previously was one of our ambassadors, and we were looking to get him more closely involved by making him part of the core team. Welcome onboard, MJ."
+    },
+    {
+        id: "12",
+        img: Assets.secmark2,
+        twitter: "",
+        date: "07.21.2021",
+        title: "Axiemon Smart Contract Audit.",
+        desc: "Callisto Network Security Department conducted Axiemon smart contract security audit."
+    },
+ 
+    {
         id: "3",
         img: Assets.news3,
         twitter: "",
@@ -394,6 +435,142 @@ export const ecosdata = [
 export const securitydata = [
     {
         id: "001",
+        img: Assets.secmark1,
+        title1: "Security",
+        title2: "First",
+        desc: [
+            {
+                id: "desc01",
+                title: "An Unstopable Platform",
+                contents: "Callisto Network has never been 51% attacked or hacked, making the Dapps running on it the safest in the blockchain ecosystem."
+            },{
+                id: "desc02",
+                title: "The Leading Security Experts",
+                contents: "Our experts have made many contributions to improve Ethereum, Ethereum Classic, EOS, and have audited more than 350 smart contracts."
+            }
+        ]
+    },
+    {
+        id: "002",
+        img: Assets.secmark2,
+        title1: "Security",
+        title2: "First",
+        desc: [
+            {
+                id: "desc01",
+                title: "An Unstopable Platform",
+                contents: "Callisto Network has never been 51% attacked or hacked, making the Dapps running on it the safest in the blockchain ecosystem."
+            },{
+                id: "desc02",
+                title: "The Leading Security Experts",
+                contents: "Our experts have made many contributions to improve Ethereum, Ethereum Classic, EOS, and have audited more than 350 smart contracts."
+            }
+        ]
+    },
+    {
+        id: "003",
+        img: Assets.secmark3,
+        title1: "Security",
+        title2: "First",
+        desc: [
+            {
+                id: "desc01",
+                title: "An Unstopable Platform",
+                contents: "Callisto Network has never been 51% attacked or hacked, making the Dapps running on it the safest in the blockchain ecosystem."
+            },{
+                id: "desc02",
+                title: "The Leading Security Experts",
+                contents: "Our experts have made many contributions to improve Ethereum, Ethereum Classic, EOS, and have audited more than 350 smart contracts."
+            }
+        ]
+    },
+    {
+        id: "004",
+        img: Assets.secmark4,
+        title1: "Security",
+        title2: "First",
+        desc: [
+            {
+                id: "desc01",
+                title: "An Unstopable Platform",
+                contents: "Callisto Network has never been 51% attacked or hacked, making the Dapps running on it the safest in the blockchain ecosystem."
+            },{
+                id: "desc02",
+                title: "The Leading Security Experts",
+                contents: "Our experts have made many contributions to improve Ethereum, Ethereum Classic, EOS, and have audited more than 350 smart contracts."
+            }
+        ]
+    },
+    {
+        id: "005",
+        img: Assets.secmark5,
+        title1: "Security",
+        title2: "First",
+        desc: [
+            {
+                id: "desc01",
+                title: "An Unstopable Platform",
+                contents: "Callisto Network has never been 51% attacked or hacked, making the Dapps running on it the safest in the blockchain ecosystem."
+            },{
+                id: "desc02",
+                title: "The Leading Security Experts",
+                contents: "Our experts have made many contributions to improve Ethereum, Ethereum Classic, EOS, and have audited more than 350 smart contracts."
+            }
+        ]
+    },
+    {
+        id: "006",
+        img: Assets.secmark6,
+        title1: "Security",
+        title2: "First",
+        desc: [
+            {
+                id: "desc01",
+                title: "An Unstopable Platform",
+                contents: "Callisto Network has never been 51% attacked or hacked, making the Dapps running on it the safest in the blockchain ecosystem."
+            },{
+                id: "desc02",
+                title: "The Leading Security Experts",
+                contents: "Our experts have made many contributions to improve Ethereum, Ethereum Classic, EOS, and have audited more than 350 smart contracts."
+            }
+        ]
+    },
+    {
+        id: "007",
+        img: Assets.secmark7,
+        title1: "Security",
+        title2: "First",
+        desc: [
+            {
+                id: "desc01",
+                title: "An Unstopable Platform",
+                contents: "Callisto Network has never been 51% attacked or hacked, making the Dapps running on it the safest in the blockchain ecosystem."
+            },{
+                id: "desc02",
+                title: "The Leading Security Experts",
+                contents: "Our experts have made many contributions to improve Ethereum, Ethereum Classic, EOS, and have audited more than 350 smart contracts."
+            }
+        ]
+    },
+    {
+        id: "008",
+        img: Assets.secmark8,
+        title1: "Security",
+        title2: "First",
+        desc: [
+            {
+                id: "desc01",
+                title: "An Unstopable Platform",
+                contents: "Callisto Network has never been 51% attacked or hacked, making the Dapps running on it the safest in the blockchain ecosystem."
+            },{
+                id: "desc02",
+                title: "The Leading Security Experts",
+                contents: "Our experts have made many contributions to improve Ethereum, Ethereum Classic, EOS, and have audited more than 350 smart contracts."
+            }
+        ]
+    },
+    {
+        id: "009",
         img: Assets.card,
         title1: "Security",
         title2: "First",
@@ -409,72 +586,6 @@ export const securitydata = [
             }
         ]
     },
-    // {
-    //     id: "002",
-    //     img: Assets.card,
-    //     title1: "Smart Contract",
-    //     title2: "Migration Service",
-    //     desc: [
-    //         {
-    //             id: "desc01",
-    //             title: "The rapid evolution of blockchain technologies",
-    //             contents: "has given rise to several dApps platforms, each with its characteristics and specificities. Depending on the technological development of these platforms, it may make sense for a developer to migrate from one platform to another."
-    //         },{
-    //             id: "desc02",
-    //             title: "Critical factors for project adoption and longevity",
-    //             contents: "The number of transactions per second, the cost per transaction, and the network’s security are critical factors for project adoption and longevity."
-    //         }
-    //     ]
-    // },{
-    //     id: "003",
-    //     img: Assets.card,
-    //     title1: "Passive Income",
-    //     title2: "With Crypto For Everyone",
-    //     desc: [
-    //         {
-    //             id: "desc01",
-    //             title: "Cold Staking",
-    //             contents: "One of Callisto’s unique features is the ability to earn a monthly passive income through a process called Cold Staking."
-    //         },{
-    //             id: "desc02",
-    //             title: "High Rewards",
-    //             contents: "The Cold Staking’s smart-contract receives 30% of all CLO mining rewards and distributes them among the cold stackers in direct proportion to their stakes. In other words, cold stakers receive interest for merely holding their CLO cryptocurrency."
-    //         }
-    //     ]
-    // },{
-    //     id: "004",
-    //     img: Assets.card,
-    //     title1: "CryptoBot",
-    //     title2: "",
-    //     desc: [
-    //         {
-    //             id: "desc01",
-    //             title: "Action",
-    //             contents: "Created and supervised by the Callisto community, CryptoBot allows the user to manage all of the Callisto wallet functionalities from within the Telegram application."
-    //         },{
-    //             id: "desc02",
-    //             title: "Compatibility",
-    //             contents: "Compatible with the most popular cryptocurrencies, CryptoBot is also a fantastic marketing tool to interact with your community like never before."
-    //         }
-    //     ]
-    // },
-    // {
-    //     id: "005",
-    //     img: Assets.card,
-    //     title1: "Security",
-    //     title2: "First",
-    //     desc: [
-    //         {
-    //             id: "desc01",
-    //             title: "An Unstopable Platform",
-    //             contents: "Callisto Network has never been 51% attacked or hacked, making the Dapps running on it the safest in the blockchain ecosystem."
-    //         },{
-    //             id: "desc02",
-    //             title: "The Leading Security Experts",
-    //             contents: "Our experts have made many contributions to improve Ethereum, Ethereum Classic, EOS, and have audited more than 350 smart contracts."
-    //         }
-    //     ]
-    // }
 ]
 
 export const discoverdata = [

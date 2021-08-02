@@ -23,6 +23,7 @@ const Ecosystem = () => {
         setCurIdx(idx);
         setItem(ecosdata[idx]);
     }
+    
     return (
         <Container>
             <TitleCon>
@@ -35,9 +36,9 @@ const Ecosystem = () => {
                     </SubTitle>
                     <Img2 src={item.img}/>
                     <div>
-                        {item.desc.map((txt) => {
+                        {item.desc.map((txt, index) => {
                             return (
-                                <Text>{txt}</Text>
+                                <Text key={index.toString()}>{txt}</Text>
                             )
                         })}
                     </div>
@@ -45,7 +46,7 @@ const Ecosystem = () => {
                         <StyledText color={Theme.colors.white} fontweight={"700"} fontsize={"22px"}>{`Learn more`}</StyledText>
                     </GetButton>
                 </LeftPane>
-                <Img src={item.img}/>
+                <Img src={item.img} alt="img"/>
             </SubCon>
             <BottomCon>
                 <IconsCon>

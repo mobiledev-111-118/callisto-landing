@@ -31,6 +31,9 @@ import news4 from 'assets/images/news/news4.png';
 import news5 from 'assets/images/news/news5.png';
 import news6 from 'assets/images/news/news6.png';
 import news7 from 'assets/images/news/news7.png';
+import news8 from 'assets/images/news/b1xz.png';
+import news9 from 'assets/images/news/237j.png';
+import news10 from 'assets/images/news/l9wc.png';
 import arrow from '../assets/images/arrow.png';
 
 // test personal images
@@ -62,6 +65,15 @@ import am14 from '../assets/images/teams/jumpy.png';
 
 import tempavatar from '../assets/images/teams/avatar.png';
 
+import secmark1 from 'assets/images/security/Are-Your-Funds-Safe-BankETH.jpg';
+import secmark2 from 'assets/images/security/Are-Your-Funds-Safe-Axiemon.jpg';
+import secmark3 from 'assets/images/security/Are-Your-Funds-Safe-Big-DogeF.jpg'
+import secmark4 from 'assets/images/security/Are-Your-Funds-Safe-Cryptoviser.jpg'
+import secmark5 from 'assets/images/security/Are-Your-Funds-Safe-Quarashi.jpg'
+import secmark6 from 'assets/images/security/Are-Your-Funds-Safe-ImmirisS.jpg'
+import secmark7 from 'assets/images/security/Are-Your-Funds-Safe-WildfireS.jpg'
+import secmark8 from 'assets/images/security/Are-Your-Funds-Safe-Open-Bi-SeaS.jpg'
+
 export const Assets = {
     back: back,
     backside: backside,
@@ -92,6 +104,9 @@ export const Assets = {
     news5,
     news6,
     news7,
+    news8,
+    news9,
+    news10,
     arrow: arrow,
 
     p1: p1,
@@ -120,5 +135,13 @@ export const Assets = {
     am14,
 
     tempavatar: tempavatar,
-    
+ 
+    secmark1,
+    secmark2,
+    secmark3,
+    secmark4,
+    secmark5,
+    secmark6,
+    secmark7,
+    secmark8,
 }

@@ -196,6 +196,7 @@ const FixedImg = styled.img`
     z-index: 1;
     background-color: transparent !important;
     padding: 0 !important;
+    border-radius: 30px;
     @media screen and (max-width: 1300px) {
         height: 250px;
     }

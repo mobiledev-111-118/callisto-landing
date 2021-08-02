@@ -29,7 +29,9 @@ const Newsletter = () => {
     const renderItems = () => {
         return newsdata.map((item, i) => (
             <div key={item.id}>
-                <FixImg src={`${item.img}`} alt="image" />
+                <ImgDiv>
+                    <FixImg src={item.img} alt="image" />
+                </ImgDiv>
                 <ContentDiv>
                     <LeftDiv>
                         <LinkStyledButton>
@@ -76,17 +78,30 @@ const Container = styled.div`
 const CardDiv = styled.div`
     padding: 20px 0px;
     @media (max-width: 768px) {
-        padding: 20px;
+        // padding: 20px;
     }
 `;
-const FixImg = styled.img`
+const ImgDiv = styled.div`
     margin-left: auto;
     margin-right: auto;
     width: 40%;
     min-width: 300px;
+    border-radius: 30px;
     @media (max-width: 768px) {
-        width: 70%;
+        width: 80%;
     }
+
+`;
+const FixImg = styled.img`
+    // margin-left: auto;
+    // margin-right: auto;
+    width: 100%;
+    padding: 0 !important;
+    // min-width: 300px;
+    border-radius: 20px;
+    // @media (max-width: 768px) {
+    //     width: 80%;
+    // }
 `;
 const TitleCon = styled.div`
     width: 100%;
@@ -100,10 +115,12 @@ const ContentDiv = styled.div`
     margin-left: 6%;
     display: flex;
     border-radius: 40px 0 0 40px;
+    height: 300px;
     background-color: ${Theme.colors.primary};
     @media (max-width: 768px) {
         margin-left: 20px;
         margin-top: 20px;
+        height: 380px;
     }
 `;
 const LeftDiv = styled.div`
