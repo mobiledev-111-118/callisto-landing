@@ -156,6 +156,7 @@ const MobHidden = styled.div`
 const MobDiv = styled.div`
     @media (max-width: 768px) {
         display: flex;
+        justify-content: space-between;
     }
 `;
 const SubTitle = styled.div<{ color: string, fontWeight: string }>`

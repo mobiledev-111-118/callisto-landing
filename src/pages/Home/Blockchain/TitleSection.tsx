@@ -24,7 +24,7 @@ const Titletext = styled.p`
     font-weight: 300;
     padding-top: 10px;
     @media (max-width: 768px) {
-        font-size: 35px;
+        font-size: 30px;
     }
 `;
 const Titletext2 = styled.p`
@@ -35,7 +35,7 @@ const Titletext2 = styled.p`
     padding-top: 10px;
     padding-left: 10px;
     @media (max-width: 768px) {
-        font-size: 35px;
+        font-size: 30px;
     }
 `;
 

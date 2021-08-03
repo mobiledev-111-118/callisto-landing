@@ -18,30 +18,30 @@ const Header = (props: { home: boolean}) => {
                 <Nav className="ml-auto custom-margin">
                     <Li>
                         <NavDropdown title="Services" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="https://callisto.network/smart-contract-audit/" >Smart Contract Audit</NavDropdown.Item>
+                            <NavDropdown.Item href="https://callisto.network/smart-contract-audit/" target="_blank">Smart Contract Audit</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="https://callisto.network/smart-contract-migration/">Smart Contract Migration</NavDropdown.Item>
+                            <NavDropdown.Item href="https://callisto.network/smart-contract-migration/" target="_blank">Smart Contract Migration</NavDropdown.Item>
                         </NavDropdown>
                     </Li>
 
                     <Li>
                         <NavDropdown title="Ecosystem" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="https://callisto.network/wallets/">Wallets</NavDropdown.Item>
+                            <NavDropdown.Item href="https://callisto.network/wallets/" target="_blank">Wallets</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="https://callisto.network/cold-staking/">Cold Staking</NavDropdown.Item>
+                            <NavDropdown.Item href="https://callisto.network/cold-staking/" target="_blank">Cold Staking</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="https://callisto.network/total-eclipse/">Total Eclipse</NavDropdown.Item>
+                            <NavDropdown.Item href="https://callisto.network/total-eclipse/" target="_blank">Total Eclipse</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="https://callisto.network/cryptobot/">CryptoBot</NavDropdown.Item>
+                            <NavDropdown.Item href="https://callisto.network/cryptobot/" target="_blank">CryptoBot</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="https://callisto.network/on-chain-governance/">On-Chain Governance</NavDropdown.Item>
+                            <NavDropdown.Item href="https://callisto.network/on-chain-governance/" target="_blank">On-Chain Governance</NavDropdown.Item>
                         </NavDropdown>
                     </Li>
                     <Li>
-                        <Nav.Link href="/blog" >Blog</Nav.Link>
+                        <Nav.Link href="https://callisto.network/blog/" target="_blank" >Blog</Nav.Link>
                     </Li>
                     <Li>
-                        <Nav.Link href="https://callisto.network/cryptocurrency/">Cyptocurrency</Nav.Link>
+                        <Nav.Link href="https://callisto.network/cryptocurrency/" target="_blank">Cyptocurrency</Nav.Link>
                     </Li>
                     <Li>
                         <Nav.Link href="https://github.com/EthereumCommonwealth/Auditing/" target="_blank">Audit</Nav.Link>

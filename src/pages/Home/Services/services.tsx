@@ -100,7 +100,7 @@ const Services = () => {
             </TitleCon>
             <MetricsCon>
                 <div className="row">
-                    <div className="col-lg-3 col-md-6 col-sm-6">
+                    {/* <div className="col-lg-3 col-md-6 col-sm-6">
                         <Row pl="0px" pr="0px">
                             <Img src={Assets.totalWallet} />
                             <RightCon>
@@ -108,8 +108,8 @@ const Services = () => {
                                 <NumberLabel>{comma3digits(mestricsData.total_wallets)}</NumberLabel>
                             </RightCon>
                         </Row>
-                    </div>
-                    <div className="col-lg-3 col-md-6 col-sm-6">
+                    </div> */}
+                    <div className="col-lg-4 col-md-6 col-sm-6">
                         <Row pl="0px" pr="0px">
                             <Img src={Assets.monthT} />
                             <RightCon>
@@ -118,7 +118,7 @@ const Services = () => {
                             </RightCon>
                         </Row>
                     </div>
-                    <div className="col-lg-3 col-md-6 col-sm-6">
+                    <div className="col-lg-4 col-md-6 col-sm-6">
                         <RowEnd pl="0px" pr="0px">
                             <Img src={Assets.frozen} />
                             <RightCon>
@@ -127,7 +127,7 @@ const Services = () => {
                             </RightCon>
                         </RowEnd>
                     </div>
-                    <div className="col-lg-3 col-md-6 col-sm-6">
+                    <div className="col-lg-4 col-md-6 col-sm-6">
                         <RowEnd pl="0px" pr="0px">
                             <Img src={Assets.hashrate} />
                             <RightCon>

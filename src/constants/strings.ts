@@ -44,10 +44,10 @@ export const social = [
         link: "https://www.youtube.com/channel/UC1WMae32v_eJ8qOtLQqM26Q",
     },{
         name: "instagram",
-        link: "https://www.youtube.com/channel/UC1WMae32v_eJ8qOtLQqM26Q",
+        link: "https://www.instagram.com/callisto.network",
     },{
         name: "facebook",
-        link: "https://www.youtube.com/channel/UC1WMae32v_eJ8qOtLQqM26Q",
+        link: "https://www.facebook.com/callistonetwork",
     },{
         name: "linkedin",
         link: "https://www.linkedin.com/company/callisto-network/",
@@ -94,7 +94,7 @@ export const callisto = [
 
 export const partners = [
     "https://callisto.network/wp-content/uploads/2020/12/SCA-logo-transparent.jpg",
-    "https://callisto.network/wp-content/uploads/2020/12/McAfeeDex-logo-transparent.jpg",
+    // "https://callisto.network/wp-content/uploads/2020/12/McAfeeDex-logo-transparent.jpg",
     "https://callisto.network/wp-content/uploads/2020/12/Invictus-logo-transparent.jpg",
     "https://callisto.network/wp-content/uploads/2020/12/Bitfinex-logo-transparent.jpg",
     "https://callisto.network/wp-content/uploads/2020/12/HitBTC-Logo-transparent.jpg",
@@ -104,11 +104,10 @@ export const partners = [
     "https://callisto.network/wp-content/uploads/2020/12/Guarda-pro-logo-transparent.jpg",
     "https://callisto.network/wp-content/uploads/2020/12/CLO-pool-pro-logo-transparent.jpg",
     "https://callisto.network/wp-content/uploads/2020/12/Maxhash-logo-transparent.jpg",
-    "https://callisto.network/wp-content/uploads/2020/12/f2pool-logo-transparent.jpg",
+    // "https://callisto.network/wp-content/uploads/2020/12/f2pool-logo-transparent.jpg",
     "https://callisto.network/wp-content/uploads/2020/12/Comining-logo-transparent.jpg",
     "https://callisto.network/wp-content/uploads/2020/12/Top-mining-logo-transparent.jpg",
     "https://callisto.network/wp-content/uploads/2020/12/SCA-logo-transparent.jpg",
-    "https://callisto.network/wp-content/uploads/2020/12/McAfeeDex-logo-transparent.jpg",
     "https://callisto.network/wp-content/uploads/2020/12/Invictus-logo-transparent.jpg",
     "https://callisto.network/wp-content/uploads/2020/12/Bitfinex-logo-transparent.jpg",
     "https://callisto.network/wp-content/uploads/2020/12/HitBTC-Logo-transparent.jpg",
@@ -595,35 +594,6 @@ export const discoverdata = [
         title: "Discover Callisto Network",
         desc1: "Callisto Network started as a self-sustained and self-funded blockchain ecosystem not financed by pre-mined coins or an ICO.",
         desc2: "Since its launch by the developers of Ethereum Commonwealth (Ethereum Classic). Callisto Network focused its attention on the weakness of the cryptocurrency space, namely the security.",
-        link: ""
+        link: "https://callisto.network/faq/"
     }
-    // ,{
-    //     id: "002",
-    //     img: Assets.back5,
-    //     title: "Discover Callisto Network",
-    //     desc1: "Callisto Network started as a self-sustained and self-funded blockchain ecosystem not financed by pre-mined coins or an ICO.",
-    //     desc2: "Since its launch by the developers of Ethereum Commonwealth (Ethereum Classic). Callisto Network focused its attention on the weakness of the cryptocurrency space, namely the security.",
-    //     link: ""
-    // },{
-    //     id: "003",
-    //     img: Assets.back5,
-    //     title: "Discover Callisto Network",
-    //     desc1: "Callisto Network started as a self-sustained and self-funded blockchain ecosystem not financed by pre-mined coins or an ICO.",
-    //     desc2: "Since its launch by the developers of Ethereum Commonwealth (Ethereum Classic). Callisto Network focused its attention on the weakness of the cryptocurrency space, namely the security.",
-    //     link: ""
-    // },{
-    //     id: "004",
-    //     img: Assets.back5,
-    //     title: "Discover Callisto Network",
-    //     desc1: "Callisto Network started as a self-sustained and self-funded blockchain ecosystem not financed by pre-mined coins or an ICO.",
-    //     desc2: "Since its launch by the developers of Ethereum Commonwealth (Ethereum Classic). Callisto Network focused its attention on the weakness of the cryptocurrency space, namely the security.",
-    //     link: ""
-    // },{
-    //     id: "005",
-    //     img: Assets.back5,
-    //     title: "Discover Callisto Network",
-    //     desc1: "Callisto Network started as a self-sustained and self-funded blockchain ecosystem not financed by pre-mined coins or an ICO.",
-    //     desc2: "Since its launch by the developers of Ethereum Commonwealth (Ethereum Classic). Callisto Network focused its attention on the weakness of the cryptocurrency space, namely the security.",
-    //     link: ""
-    // }
 ]

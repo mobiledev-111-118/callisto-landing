@@ -22,12 +22,15 @@ const TitleArea = styled.div`
         margin-top:  130px;
         padding-right: 8%;
     }
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         margin-top: 100px;
         padding: 10px 0px 10px 20px;
     }
     @media (max-width: 596px) {
-        margin-top: 20px;
+        margin-top: 80px;
+    }
+    @media (max-width: 320px) {
+        margin-top: 50px;
     }
 `;
 

@@ -34,7 +34,7 @@ const Ecosystem = () => {
                     <SubTitle>
                         {item.title}
                     </SubTitle>
-                    <Img2 src={item.img}/>
+                    <Img2 src={item.img} alt="mark"/>
                     <div>
                         {item.desc.map((txt, index) => {
                             return (
@@ -50,7 +50,7 @@ const Ecosystem = () => {
             </SubCon>
             <BottomCon>
                 <IconsCon>
-                    <div className = "row" >
+                    <div className = "row center" >
                             <Button onClick={() => handleClick(0)}>
                                 <EcoIcon1 color={curIdx === 0 ? Theme.colors.secondary: Theme.colors.opacity2th}/>
                             </Button>
@@ -128,6 +128,7 @@ const Img2 = styled.img`
     @media screen and (max-width: 768px) {
         display: block;
         width: 300px;
+        margin: 30px auto;
     }
     @media screen and (max-width: 310px) {
         width: 250px;
@@ -149,9 +150,11 @@ const Img = styled.img`
 const SubTitle = styled.p`
     font-family: ${Theme.fonts.textBold};
     font-size: 35px;
+    line-height: 45px;
     color: ${Theme.colors.secondary};
     @media screen and (max-width: 768px) {
         font-size: 30px;
+        text-align: center;
     }
 `;
 const Text = styled.p`
@@ -160,6 +163,9 @@ const Text = styled.p`
     line-height: 20px;
     margin: 20px 0;
     color: ${Theme.colors.secondary};
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 `;
 const GetButton = styled.a`
     background-color: ${Theme.colors.primary};
