@@ -148,6 +148,14 @@ export const coreteams = [
             "Main advisor of Callisto Enterprise",
         ],
     },{
+        name: "Dexaran",
+        avatar: Assets.p6,
+        role: "Researching Team Lead",
+        description: [
+            "EthereumCommonwealth Founder",
+            "Creator of #ERC223 Standard"
+        ],
+    },{
         name: "Yuriy",
         avatar: Assets.p5,
         role: "Auditors Team Lead",
@@ -156,20 +164,26 @@ export const coreteams = [
             "Main Callisto smart contract developer",
         ],
     },{
+        name: "Muf Moto",
+        avatar: Assets.am6,
+        role: "Project Manager",
+        description: [
+            "More than 25 years of experience in the IT industry in different positions and involved in the Czech crypto-community for over 5 years.",
+        ],
+    },{
+        name: "MJ",
+        avatar: Assets.am9,
+        role: "Lead Analyst",
+        description: [
+            "Processing solid experience in data gathering, processing and analysis, worked on several development projects with data focus from the inside out.",
+        ],
+    },{
         name: "Wang",
         avatar: Assets.p7,
         role: "Senior Frontend Developer",
         description: [
             "Member since 2021",
             "Senior frontend(Mobile/Web) & backend developer"
-        ],
-    },{
-        name: "Dexaran",
-        avatar: Assets.p6,
-        role: "Researching Team Lead",
-        description: [
-            "EthereumCommonwealth Founder",
-            "Creator of #ERC223 Standard"
         ],
     },{
         name: "Gerhard Fourie",
@@ -215,26 +229,18 @@ export const devteams = [
         role: "Korean Ambassador",
         tele: "@newgenex"
     },{
-        name: "Muf Moto",
-        avatar: Assets.am6,
-        role: "Czech Ambassador",
-        tele: "@Mufmoto"
-    },{
         name: "Smart Vector",
         avatar: Assets.am7,
         role: "African Ambassador",
         tele: "@SmartVector"
-    },{
-        name: "Mike",
-        avatar: Assets.am8,
-        role: "Ambassador",
-        tele: "@cryptodaddy007",
-    },{
-        name: "MJ",
-        avatar: Assets.am9,
-        role: "Ambassador",
-        tele: "@MJ_ukr"
-    },{
+    },
+    // {
+    //     name: "Mike",
+    //     avatar: Assets.am8,
+    //     role: "Ambassador",
+    //     tele: "@cryptodaddy007",
+    // },
+    {
         name: "Co BE Kieu Ky",
         avatar: Assets.am10,
         role: "Admin",
@@ -259,6 +265,16 @@ export const devteams = [
         avatar: Assets.am14,
         role: "Admin",
         tele: "@Jumpy1971"
+    },{
+        name: "Carlos Leiton",
+        avatar: Assets.carlos,
+        role: "Admin",
+        tele: "@caleiton"
+    },{
+        name: "Miles",
+        avatar: Assets.miles,
+        role: "Admin",
+        tele: "@S6AeK3R"
     }
 ]
 

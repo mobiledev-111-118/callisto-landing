@@ -62,6 +62,8 @@ import am11 from '../assets/images/teams/jet.png';
 import am12 from '../assets/images/teams/abdou.png';
 import am13 from '../assets/images/teams/kite.png';
 import am14 from '../assets/images/teams/jumpy.png';
+import miles from 'assets/images/teams/Miles.jpg';
+import carlos from 'assets/images/teams/Carlos.jpg';
 
 import tempavatar from '../assets/images/teams/avatar.png';
 
@@ -133,6 +135,8 @@ export const Assets = {
     am12,
     am13,
     am14,
+    miles,
+    carlos,
 
     tempavatar: tempavatar,
  
